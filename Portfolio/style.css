@@ -29,6 +29,7 @@ header h1 {
 nav ul {
     list-style-type: none;
     margin-top: 10px;
+    padding: 0;
 }
 
 nav ul li {
@@ -79,9 +80,58 @@ footer ul li a {
 .project {
     padding: 10px;
     border: 1px solid #ccc;
-    transition: background-color 0.3s ease; 
+    transition: background-color 0.3s ease;
 }
 
 .project:hover {
     background-color: #f0f0f0;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul li {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+    }
+
+    footer ul li {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    footer ul li a {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav ul li a {
+        font-size: 0.9rem;
+    }
+
+    footer ul li a {
+        font-size: 0.8rem;
+    }
+
+    .project {
+        padding: 5px;
+        font-size: 0.9rem;
+    }
 }
